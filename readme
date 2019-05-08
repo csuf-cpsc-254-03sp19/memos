@@ -11,8 +11,17 @@ Set Up
 ------
 Install Apache, MySQL, and PHP to your server.
 Then, setup a new MySQL database in the following structure:
-	users (id (key, unique, auto-increment), code, agencyName, name, pass, email, rankid, active)
-	memos (id (key, unique, auto-increment), code, createdBy, timestamp, title, message, isDeleted (Default: 0))
+	users (int id (key, unique, auto-increment), text code, text agencyName, text name, text password (stored in md5), text email, int rankid, int active)
+	memos (int id (key, unique, auto-increment), text code, int createdBy, text timestamp, text title, text message, int isDeleted (Default: 0))
 
 Update functions/connect.php with your newly set up credentials and database name.
+Add row to users database with the following values:
+	code- *your company name with no spaces*
+	agencyName- *your company name*
+	name- *your name*
+	password- *your password encrypted with md5*
+	email- *your email*
+	rankid- 2
+	active- 1
+	
 Login and start sending memos!
