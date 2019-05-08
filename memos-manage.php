@@ -1,22 +1,6 @@
 <?php include("core/officer.php"); ?>
 <?php include("core/head.php"); ?>
 <?PHP include 'functions/connect.php'; ?>
-<?php
-function ttruncat($text,$numb) {
-    if (strlen($text) > $numb) {
-        $text = substr($text, 0, $numb);
-        $text = substr($text,0,strrpos($text," "));
-        $etc = " ...";
-        $text = $text.$etc;
-    }
-    return $text;
-}
-?>
-<?php
-$arr = explode(' ',trim($name));
-$firstName = $arr[0];
-?>
-
     <div class="container">
         <div class="grid">
             <h1>Memo Management</h1>
