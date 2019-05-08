@@ -28,11 +28,9 @@ if (isset($_SESSION['name'])){
     
     <!-- Metro UI CSS JavaScript plugins -->
     <script src="js/load-metro.js"></script>
-    <script src="js/metro/metro-button-set.js"></script>
+    <script src="js/metro-button-set.js"></script>
 
     <title>Memo Management</title>
-    
-    <link rel="Shortcut Icon" href="/favicon.ico">
     
 </head>
 <body class='metro'>
