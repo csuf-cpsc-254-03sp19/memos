@@ -1,4 +1,4 @@
-BRYAN RUEF
+BRYAN RUEF (CWID 888790219)
 CPSC 254-03
 
 *** EMPLOYEE MEMO SYSTEM ***
@@ -6,3 +6,13 @@ CPSC 254-03
 Prerequisites:
   - MySQL
   - Apache w/ PHP
+
+Set Up
+------
+Install Apache, MySQL, and PHP to your server.
+Then, setup a new MySQL database in the following structure:
+	users (id (key, unique, auto-increment), code, agencyName, name, pass, email, rankid, active)
+	memos (id (key, unique, auto-increment), code, createdBy, timestamp, title, message, isDeleted (Default: 0))
+
+Update functions/connect.php with your newly set up credentials and database name.
+Login and start sending memos!
